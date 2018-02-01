@@ -207,6 +207,18 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="icons\Facebook-Icon.png" />
+    <Content Include="icons\Instagram-Icon.png" />
+    <Content Include="icons\Twitter-Icon.png" />
+    <Content Include="icons\Youtube-Icon.png" />
+    <Content Include="photos\photo1.jpg" />
+    <Content Include="photos\pic1.jpg" />
+    <Content Include="photos\pic2.jpg" />
+    <Content Include="photos\pic3.jpg" />
+    <Content Include="photos\pic5.jpg" />
+    <Content Include="photos\picgroup.jpg" />
+    <Content Include="photos\picgroup2.JPG" />
+    <Content Include="photos\picsurgeon.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
@@ -257,6 +269,7 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Shared\_LanguagePartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
