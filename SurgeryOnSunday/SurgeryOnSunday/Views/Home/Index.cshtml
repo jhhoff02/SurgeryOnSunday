@@ -1,31 +1,102 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "Home";
 }
 
 <div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+    @*<h1>Surgery on Sunday</h1>*@
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" style="max-height: 700px; overflow: hidden;">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active" style="width: 100%; height: auto;">
+                <img src="~/photos/photo1.jpg" alt="" style="width: 100%;">
+            </div>
+
+            <div class="item" style="width: 100%; height: auto;">
+                <img src="~/photos/picsurgeon.jpg" alt="" style="width: 100%;">
+            </div>
+
+            <div class="item" style="width: 100%; height: auto;">
+                <img src="~/photos/picgroup2.jpg" alt="" style="width: 100%;">
+            </div>
+        </div>
+
+        <!-- Icons -->
+        <div class="center carousel-control" href="#myCarousel">
+            <a class="center navbar-brand" href="#" style="opacity: 1;">
+                <img alt="Brand" src="~/icons/Facebook-Icon.png">
+            </a>
+            <a class="center navbar-brand" href="#" style="opacity: 1;">
+                <img alt="Brand" src="~/icons/Instagram-Icon.png">
+            </a>
+            <a class="center navbar-brand" href="#" style="opacity: 1;">
+                <img alt="Brand" src="~/icons/Twitter-Icon.png">
+            </a>
+            <a class="center navbar-brand" href="#" style="opacity: 1;">
+                <img alt="Brand" src="~/icons/Youtube-Icon.png">
+            </a>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
 </div>
 
 <div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-heading text-center">
+                <h1 class="panel-title">We are Surgery on Sunday Louisville, Inc.</h1>
+            </div>
+            <div class="panel-body">
+                <p style="font-size:large; text-indent:20px">
+                    Surgery On Sunday – Louisville, Inc. provides outpatient surgical and endoscopic procedures to patients who are within 250% of the current federal poverty line, have medical need, are symptomatic and/or in a high risk healthcare category (such as family history), and are uninsured or underinsured.  Our licensed physicians, medical and non-clinical support staff,  and healthcare partners provide all services on a volunteer basis.  Our patients never see a bill. We are a non-profit organization based in Louisville, KY. Our program was founded in 2013 by a group of passionate medical professionals and members of the Louisville community.
+                </p>
+            </div>
+        </div>
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/oePBye4vrnA?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
     </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+    <div class="col-md-6">
+        <div class="panel panel-default">
+            <div class="panel-heading text-center">
+                <h2 class="panel-title">Subscribe to our quarterly mailing list!</h2>
+            </div>
+            <div class="panel-body">
+                <div class="input-group" style="padding:10px;">
+                    <span class="input-group-addon" id="basic-addon1">Email Address*</span>
+                    <input type="text" class="form-control" placeholder="..." aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group" style="padding:10px;">
+                    <span class="input-group-addon" id="basic-addon1">First Name</span>
+                    <input type="text" class="form-control" placeholder="..." aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group" style="padding:10px;">
+                    <span class="input-group-addon" id="basic-addon1">Last Name</span>
+                    <input type="text" class="form-control" placeholder="..." aria-describedby="basic-addon1">
+                </div>
+                <div class="text-center">
+                    <button type="button" class="btn btn-default">Subscribe</button>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
