@@ -209,6 +209,10 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="photos\AboutUs.jpg" />
+    <Content Include="photos\Beatriz.jpg" />
+    <Content Include="photos\EricaSutton.jpg" />
+    <Content Include="photos\JordanLicata.jpg" />
+    <Content Include="photos\SamWalling.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">

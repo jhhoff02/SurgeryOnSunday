@@ -15,7 +15,7 @@ namespace SurgeryOnSunday.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Surgery on Sunday Louisvile";
+            ViewBag.Message = "Surgery on Sunday Louisville";
 
             return View();
         }
