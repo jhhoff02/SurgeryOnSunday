@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title - SOS Louisville</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
@@ -17,14 +17,25 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("SOS Louisville", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("About Us", "About", "Home")</li>
+                    <li>@Html.ActionLink("Get Help", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Get Involved", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Patient Referral", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("DONATE", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Events", "Contact", "Home")</li>
+                    <li>
+                        <select class="selectpicker" data-width="fit" style="margin-top:15px; padding-left:5px;">
+                            <option data-content='<span class="flag-icon flag-icon-us"></span> English'>English</option>
+                            <option data-content='<span class="flag-icon flag-icon-mx"></span> Español'>Español</option>
+                        </select>
+                    </li>
                 </ul>
+                @*@Html.Partial("_LanguagePartial")*@
                 @Html.Partial("_LoginPartial")
             </div>
         </div>
@@ -33,7 +44,18 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <div class="row">
+                    <div class="col-md-4 bottom-left">&copy; @DateTime.Now.Year - Surgery on Sunday Application</div>
+                    <div class="col-md-4 bottom-right text-center" style="font-weight:bold;">
+                        Surgery on Sunday Louisville is a proud member partner of the National Colorectal Roundtable and is a member of the 80% by 2018 movement by the American Cancer Society
+                    </div>
+                    <div class="col-md-4 bottom-right">
+                        PO Box 4757
+                        Louisville, KY 40204
+                        502-242-2089
+                        info@soslouisville.org
+                    </div>
+            </div>
         </footer>
     </div>
 
