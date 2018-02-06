@@ -1,0 +1,258 @@
+﻿
+@{
+    ViewBag.Title = "GeneralForm";
+}
+
+<html>
+
+<body>
+
+    <div class="banner">
+
+        <img class="banner-image" src="~/photos/heart.jpg" alt="" style="width: 100%; height:350px">
+
+    </div>
+
+    <div class="grid-100 clearfix">
+        <h2 id="registration_form_title">Non-Clinical General Volunteer Form</h2>
+    </div>
+
+    <br />
+
+    <p style="color:rgb(0, 143, 179); text-align: center; font-size:18px; font-style: italic">
+        This volunteer form is for all individuals who wish to volunteer with SOSL in a non-clinical
+        fashion, or for undergraduate and medical students who wish to shadow our clinical operations.
+    </p>
+
+
+    <!-- Main form -->
+    <div class="grid-50 tablet-grid-50 mobile-grid-100">
+        <div class="infoCard formPanel campaignInfo">
+            <form class="simple_form new_registration" id="new_registration" action="/public/registrations" accept-charset="UTF-8" method="post">
+                <input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="Uqw5KJJ5t6mMcuD0moRpVb4M4XqUzZZfhilinKKY/VTdW7fNQIYycH3AJU38R4STdXVJkd+sNQ29TkAjJfTi4w==" />
+
+                <h2 id="registration_form_heading"></h2>
+
+                <div id="error_explanation">
+                    <ul></ul>
+                </div>
+
+                <input type="hidden" value="9e4849a1-21c4-493a-9a8d-36f738172fc0" name="registration[registration_form_id]" id="registration_registration_form_id" />
+
+
+                <input type="hidden" value="2496" name="registration[person_attributes][organization_id]" id="registration_person_attributes_organization_id" />
+
+                <div class="control_row">
+                    <div class="control-group string required registration_person_first_name"><label class="string required control-label" for="registration_person_attributes_first_name"><abbr title="required">*</abbr> First Name</label><div class="controls"><input required="required" class="string required " id="registration_person_attributes_first_name" name="registration[person_attributes][first_name]" maxlength="75" aria-required="true" size="75" type="text" /></div></div>
+
+                </div>
+                <br />
+
+                <div class="control_row">
+                    <div class="control-group string required registration_person_last_name"><label class="string required control-label" for="registration_person_attributes_last_name"><abbr title="required">*</abbr> Last Name</label><div class="controls"><input required="required" class="string required " id="registration_person_attributes_last_name" name="registration[person_attributes][last_name]" maxlength="75" aria-required="true" size="75" type="text" /></div></div>
+
+                </div>
+                <br />
+
+                <div class="control_row">
+                    <div class="control-group string required registration_person_address"><label class="string required control-label" for="registration_person_attributes_address"><abbr title="required">*</abbr> Address</label><div class="controls"><input required="required" class="string required " id="registration_person_attributes_address" name="registration[person_attributes][address]" maxlength="75" aria-required="true" size="75" type="text" /></div></div>
+
+                </div>
+                <br />
+
+                <div class="control_row">
+                    <div class="control-group string required registration_person_city"><label class="string required control-label" for="registration_person_attributes_city"><abbr title="required">*</abbr> City</label><div class="controls"><input required="required" class="string required " id="registration_person_attributes_city" name="registration[person_attributes][city]" maxlength="75" aria-required="true" size="75" type="text" /></div></div>
+
+                </div>
+                <br />
+
+                @*<div class="control_row">
+                    <div class="control-group string required registration_person_state"><label class="string required control-label" for="registration_person_attributes_state"><abbr title="required">*</abbr> State</label><div class="controls"><input required="required" class="string required " id="registration_person_attributes_state" name="registration[person_attributes][state]" maxlength="1000" aria-required="true" size="1000" type="text" /></div></div>*@
+                <div class="control_row">
+                    <label>State</label>
+                    <br />
+
+                    <input name="registration[person_attributes][custom_field_answers][12935][]" type="hidden" value="" /><select class="multi-select required" multiple="multiple" id="registration_person_attributes_custom_field_answers_12935" name="registration[person_attributes][custom_field_answers][12935][]">
+                        <option value="AL">Alabama</option>
+                        <option value="AK">Alaska</option>
+                        <option value="AZ">Arizona</option>
+                        <option value="AR">Arkansas</option>
+                        <option value="CA">California</option>
+                        <option value="CO">Colorado</option>
+                        <option value="CT">Connecticut</option>
+                        <option value="DE">Delaware</option>
+                        <option value="FL">Florida</option>
+                        <option value="GA">Georgia</option>
+                        <option value="HI">Hawaii</option>
+                        <option value="ID">Idaho</option>
+                        <option value="IL">Illinois</option>
+                        <option value="IN">Indiana</option>
+                        <option value="IA">Iowa</option>
+                        <option value="KS">Kansas</option>
+                        <option value="KY">Kentucky</option>
+                        <option value="LA">Louisiana</option>
+                        <option value="ME">Maine</option>
+                        <option value="MD">Maryland</option>
+                        <option value="MA">Massachusetts</option>
+                        <option value="MI">Michigan</option>
+                        <option value="MN">Minnesota</option>
+                        <option value="MS">Mississippi</option>
+                        <option value="MO">Missouri</option>
+                        <option value="MT">Montona</option>
+                        <option value="NE">Nebraska</option>
+                        <option value="NV">Nevada</option>
+                        <option value="NH">New Hampshire</option>
+                        <option value="NJ">New Jersey</option>
+                        <option value="NM">New Mexico</option>
+                        <option value="NY">New York</option>
+                        <option value="NC">North Carolina</option>
+                        <option value="ND">North Dakota</option>
+                        <option value="OH">Ohio</option>
+                        <option value="OK">Oklahoma</option>
+                        <option value="OR">Oregon</option>
+                        <option value="PA">Pennsylvania</option>
+                        <option value="RI">Rhode Island</option>
+                        <option value="SC">South Carolina</option>
+                        <option value="SD">South Dakota</option>
+                        <option value="TN">Tennessee</option>
+                        <option value="TX">Texas</option>
+                        <option value="UT">Utah</option>
+                        <option value="VT">Vermont</option>
+                        <option value="VA">Virginia</option>
+                        <option value="WA">Washington</option>
+                        <option value="WV">West Virginia</option>
+                        <option value="WI">Wisconsin</option>
+                        <option value="WY">Wyoming</option>
+                    </select>
+
+                </div>
+                <br />
+
+                <div class="control_row">
+                    <div class="control-group string required registration_person_postal_code"><label class="string required control-label" for="registration_person_attributes_postal_code"><abbr title="required">*</abbr> Postal Code</label><div class="controls"><input required="required" class="string required " id="registration_person_attributes_postal_code" name="registration[person_attributes][postal_code]" maxlength="75" aria-required="true" size="75" type="text" /></div></div>
+
+                </div>
+                <br />
+
+                <div class="control_row">
+                    <div class="control-group email required registration_person_email"><label class="email required control-label" for="registration_person_attributes_email"><abbr title="required">*</abbr> Email</label><div class="controls"><input required="required" class="string email required " id="registration_person_attributes_email" name="registration[person_attributes][email]" maxlength="75" aria-required="true" type="email" size="75" value="" /></div></div>
+
+                </div>
+                <br />
+
+                <div class="control_row">
+                    <div class="control-group tel required registration_person_mobile_phone"><label class="tel required control-label" for="registration_person_attributes_mobile_phone"><abbr title="required">*</abbr> Mobile Phone</label><div class="controls"><input required="required" class="string tel required " id="registration_person_attributes_mobile_phone" name="registration[person_attributes][mobile_phone]" maxlength="15" aria-required="true" type="tel" size="15" /></div></div>
+
+                </div>
+                <br />
+
+                <div class="control_row">
+                    <div class="control-group string required registration_person_birthday"><label class="string required control-label" for="registration_person_attributes_birthday"><abbr title="required">*</abbr> Birthday</label><div class="controls"><input required="required" class="string required datepicker" id="registration_person_attributes_birthday" name="registration[person_attributes][birthday]" maxlength="75" aria-required="true" size="75" type="text" /></div></div>
+
+                </div>
+                <br />
+
+                <div class="control_row">
+                    <div class="control-group string optional registration_person_preferred_name"><label class="string optional control-label" for="registration_person_attributes_preferred_name">Preferred Name</label><div class="controls"><input class="string optional " id="registration_person_attributes_preferred_name" name="registration[person_attributes][preferred_name]" maxlength="75" size="75" type="text" /></div></div>
+
+                </div>
+                <br />
+
+                <div class="control_row">
+                    <div class="control-group string optional registration_person_employer"><label class="string optional control-label" for="registration_person_attributes_employer">Employer</label><div class="controls"><input class="string optional " id="registration_person_attributes_employer" name="registration[person_attributes][employer]" maxlength="75" size="75" type="text" /></div></div>
+
+                </div>
+                <br />
+
+                <div class="control_row">
+                    <div class="control-group select required registration_person_custom_field_answers_12898">
+                        <label class="select required control-label" for="registration_person_attributes_custom_field_answers_12898"><abbr title="required">*</abbr> Which best describes you?</label><div class="controls">
+                            <select required="required" id="registration_person_attributes_custom_field_answers_12898" name="registration[person_attributes][custom_field_answers][12898]" class="select required" aria-required="true">
+                                <option value="">Select...</option>
+                                <option value="Undergraduate Student">Undergraduate Student</option>
+                                <option value="Medical Student (1st-3rd year)">Medical Student (1st-3rd year)</option>
+                                <option value="Medical Student (4th Year)">Medical Student (4th Year)</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <br />
+
+                <div class="control_row">
+                    <label>* Which areas are you interested in volunteering in?</label>
+                    <br />
+
+                    <input name="registration[person_attributes][custom_field_answers][12896][]" type="hidden" value="" /><select class="multi-select required" multiple="multiple" id="registration_person_attributes_custom_field_answers_12896" name="registration[person_attributes][custom_field_answers][12896][]">
+                        <option value="Registration">Registration</option>
+                        <option value="Cleaning">Cleaning</option>
+                        <option value="Clinical Shadowing">Clinical Shadowing</option>
+                        <option value="Fundraising">Fundraising</option>
+                    </select>
+
+                </div>
+                <br />
+
+                <div class="control_row">
+                    <div class="control-group text optional registration_person_custom_field_answers_12897">
+                        <label class="text optional control-label" for="registration_person_attributes_custom_field_answers_12897">Briefly explain to us why you are interested in serving with SOSL.</label><div class="controls">
+                            <textarea rows="4" class="text optional " id="registration_person_attributes_custom_field_answers_12897" name="registration[person_attributes][custom_field_answers][12897]" maxlength="1000">
+</textarea>
+                        </div>
+                    </div>
+                </div>
+                <br />
+
+                <div class="control_row">
+                    <div class="control-group select required registration_person_custom_field_answers_12895">
+                        <label class="select required control-label" for="registration_person_attributes_custom_field_answers_12895"><abbr title="required">*</abbr> What is your T-Shirt Size?</label><div class="controls">
+                            <select required="required" id="registration_person_attributes_custom_field_answers_12895" name="registration[person_attributes][custom_field_answers][12895]" class="select required" aria-required="true">
+                                <option value="">Select...</option>
+                                <option value="XS">XS</option>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                                <option value="XXL">XXL</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <br />
+
+                <button type="button" class="btn btn-info">Submit</button>
+
+            </form>
+        </div>
+    </div>
+
+    <!-- Feature image -->
+    <div class="grid-50 tablet-grid-50 mobile-grid-100">
+
+
+    </div><!-- .grid-container -->
+
+    <div id="dialog"></div>
+    <footer id="footer" class='full-width ' style='display: none;'>
+        <div id='footer-wrapper'>
+        </div>
+        <div class='footer-brand clearfix'>
+            <h5 class="organization-title-small helvetica"><a href="/dashboard">Surgery on Sunday Louisville</a></h5>
+
+
+            <nav class="footer-navigation helvetica clearfix ">
+                <ul class="unstyled unpadded">
+                    <li class="footer-li"><a href="/users/sign_in">Sign In</a></li>
+                    <li class="footer-li"><a href="/contact">Contact</a></li>
+                    <li class="footer-li"><a href="/refund_policy">Refunds</a></li>
+                    <li class="footer-li"><a href="/privacy_policy">Privacy</a></li>
+                    <li class="footer-li"><a href="/terms_of_use">Terms</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+
