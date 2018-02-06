@@ -9,7 +9,65 @@
 
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+
+
+    <div id="main-nav" class="affix-top">
+
+        <nav class="navbar">
+            <div class="container">
+
+                <div class="navbar-header">
+                    <a href="index.html" class="navbar-brand">MyBiz</a>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#ftheme">
+                        <span class="sr-only">Toggle</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <div class="navbar-collapse collapse" id="ftheme">
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="/Home/Index">Home</a></li>
+                        <li><a href="/Home/About">About Us</a></li>
+                        <li><a href="/Home/Contact">Get Help</a></li>
+                        <li><a href="/Home/Contact">Patient Referral</a></li>
+                        <li><a href="/Home/Contact">Events</a></li>
+                        <li><a href="/Home/Contact">DONATE</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="/Home/Contact">
+                                Get Involved
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/VolunteerForm/PhysVolForm">Physician</a></li>
+                                <li><a href="/VolunteerForm/NonPhysClinicalVolForm">Non-Physician Clinical</a></li>
+                                <li><a href="/VolunteerForm/GeneralForm">General</a></li>
+                                <li><a href="/VolunteerForm/MedicalInterpreterForm">Medical Interpreter</a></li>
+                                <li><a href="/VolunteerForm/VolunteerCommentForm">Volunteer Comments</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="search-form">
+                    <form lpformnum="1">
+                        <input type="text" id="s" size="40" placeholder="Search...">
+                    </form>
+                </div>
+
+            </div>
+        </nav>
+    </div>
+
+
+
+
+
+    @* OLD NAV *@
+      @*<div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -25,6 +83,20 @@
                     <li>@Html.ActionLink("About Us", "About", "Home")</li>
                     <li>@Html.ActionLink("Get Help", "Contact", "Home")</li>
                     <li>@Html.ActionLink("Get Involved", "Contact", "Home")</li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="/Home/Contact">
+                            Get Involved
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/VolunteerForm/PhysVolForm">Physician</a></li>
+                            <li><a href="/VolunteerForm/NonPhysClinicalVolForm">Non-Physician Clinical</a></li>
+                            <li><a href="/VolunteerForm/GeneralForm">General</a></li>
+                            <li><a href="/VolunteerForm/MedicalInterpreterForm">Medical Interpreter</a></li>
+                            <li><a href="/VolunteerForm/VolunteerCommentForm">Volunteer Comments</a></li>
+                        </ul>
+                    </li>
+
                     <li>@Html.ActionLink("Patient Referral", "Contact", "Home")</li>
                     <li>
                         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
@@ -46,12 +118,13 @@
                             <option data-content='<span class="flag-icon flag-icon-mx"></span> Español'>Español</option>
                         </select>
                     </li>
+                    
                 </ul>
-                @*@Html.Partial("_LanguagePartial")*@
+                @Html.Partial("_LanguagePartial")
                 @Html.Partial("_LoginPartial")
             </div>
         </div>
-    </div>
+    </div>*@
     <div class="container body-content">
         @RenderBody()
         <hr />
