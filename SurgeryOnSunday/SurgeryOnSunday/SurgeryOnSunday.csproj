@@ -190,6 +190,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\Get-helpController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\VolunteerFormController.cs" />
@@ -292,6 +293,7 @@
     <Content Include="Views\VolunteerForm\NonPhysClinicalVolForm.cshtml" />
     <Content Include="Views\VolunteerForm\PhysVolForm.cshtml" />
     <Content Include="Views\VolunteerForm\VolunteerCommentForm.cshtml" />
+    <Content Include="Views\Home\Gethelp.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
