@@ -220,6 +220,8 @@
     <Content Include="icons\Instagram-Icon.png" />
     <Content Include="icons\Twitter-Icon.png" />
     <Content Include="icons\Youtube-Icon.png" />
+    <Content Include="photos\heart.jpg" />
+    <Content Include="photos\heartSteth.jpeg" />
     <Content Include="photos\pic1.jpg" />
     <Content Include="photos\pic2.jpg" />
     <Content Include="photos\pic3.jpg" />
