@@ -25,9 +25,21 @@
                     <li>@Html.ActionLink("About Us", "About", "Home")</li>
                     <li>@Html.ActionLink("Get Help", "Contact", "Home")</li>
                     <li>@Html.ActionLink("Get Involved", "Contact", "Home")</li>
-                    <li>@Html.ActionLink("Patient Referral", "PatientReferral", "PatientReferral")</li>
-                    <li>@Html.ActionLink("DONATE", "Contact", "Home")</li>
-                    <li>@Html.ActionLink("Events", "Event", "Event")</li>
+                    <li>@Html.ActionLink("Patient Referral", "Contact", "Home")</li>
+                    <li>
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                            <input type="hidden" name="cmd" value="_donations">
+                            <input type="hidden" name="business" value="SOSLouisville@gmail.com">
+                            <input type="hidden" name="lc" value="US">
+                            <input type="hidden" name="item_name" value="Surgery On Sunday Louisville">
+                            <input type="hidden" name="no_note" value="0">
+                            <input type="hidden" name="currency_code" value="USD">
+                            <input type="hidden" name="bn" value="PP-DonationsBF:btn_donate_LG.gif:NonHostedGuest">
+                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                        </form>
+                    </li>
+                    <li>@Html.ActionLink("Events", "Contact", "Home")</li>
                     <li>
                         <select class="selectpicker" data-width="fit" style="margin-top:15px; padding-left:5px;">
                             <option data-content='<span class="flag-icon flag-icon-us"></span> English'>English</option>
@@ -45,16 +57,16 @@
         <hr />
         <footer>
             <div class="row">
-                <div class="col-md-4 bottom-left">&copy; @DateTime.Now.Year - Surgery on Sunday Application</div>
-                <div class="col-md-4 bottom-right text-center" style="font-weight:bold;">
-                    Surgery on Sunday Louisville is a proud member partner of the National Colorectal Roundtable and is a member of the 80% by 2018 movement by the American Cancer Society
-                </div>
-                <div class="col-md-4 bottom-right">
-                    PO Box 4757
-                    Louisville, KY 40204
-                    502-242-2089
-                    info@soslouisville.org
-                </div>
+                    <div class="col-md-4 bottom-left">&copy; @DateTime.Now.Year - Surgery on Sunday Application</div>
+                    <div class="col-md-4 bottom-right text-center" style="font-weight:bold;">
+                        Surgery on Sunday Louisville is a proud member partner of the National Colorectal Roundtable and is a member of the 80% by 2018 movement by the American Cancer Society
+                    </div>
+                    <div class="col-md-4 bottom-right">
+                        PO Box 4757
+                        Louisville, KY 40204
+                        502-242-2089
+                        info@soslouisville.org
+                    </div>
             </div>
         </footer>
     </div>
@@ -62,6 +74,5 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
-
 </body>
 </html>
