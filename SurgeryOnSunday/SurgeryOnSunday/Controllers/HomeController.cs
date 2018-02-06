@@ -26,5 +26,11 @@ namespace SurgeryOnSunday.Controllers
 
             return View();
         }
+
+        public ActionResult Gethelp()
+        {
+            return View();
+        }
+      
     }
 }
