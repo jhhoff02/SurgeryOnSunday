@@ -220,6 +220,11 @@
     <Content Include="icons\Instagram-Icon.png" />
     <Content Include="icons\Twitter-Icon.png" />
     <Content Include="icons\Youtube-Icon.png" />
+    <Content Include="photos\AboutUs.jpg" />
+    <Content Include="photos\BeatrizSanchez.jpeg" />
+    <Content Include="photos\EricaSutton.jpg" />
+    <Content Include="photos\JordanLicata.jpg" />
+    <Content Include="photos\PartnerClinic.png" />
     <Content Include="photos\photo1.jpg" />
     <Content Include="photos\pic1.jpg" />
     <Content Include="photos\pic2.jpg" />
@@ -228,6 +233,8 @@
     <Content Include="photos\picgroup.jpg" />
     <Content Include="photos\picgroup2.JPG" />
     <Content Include="photos\picsurgeon.jpg" />
+    <Content Include="photos\SamWalling.png" />
+    <Content Include="photos\SOSlogo.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
