@@ -187,10 +187,21 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\Get-helpController.cs" />
+    <Compile Include="Controllers\EventController.cs" />
+    <Compile Include="Controllers\GetHelpController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\PatientReferralController.cs" />
     <Compile Include="Controllers\VolunteerFormController.cs" />
+    <Compile Include="Event.cs">
+      <DependentUpon>EventsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EventsModel.Context.cs" />
+    <Compile Include="EventsModel1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EventsModel.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -218,7 +229,11 @@
     <Content Include="icons\Instagram-Icon.png" />
     <Content Include="icons\Twitter-Icon.png" />
     <Content Include="icons\Youtube-Icon.png" />
+    <Content Include="photos\AboutUs.jpg" />
+    <Content Include="photos\Beatriz.jpg" />
+    <Content Include="photos\EricaSutton.jpg" />
     <Content Include="photos\ig.jpg" />
+    <Content Include="photos\JordanLicata.jpg" />
     <Content Include="photos\photo1.jpg" />
     <Content Include="photos\heart.jpg" />
     <Content Include="photos\heartSteth.jpeg" />
@@ -229,6 +244,7 @@
     <Content Include="photos\picgroup.jpg" />
     <Content Include="photos\picgroup2.JPG" />
     <Content Include="photos\picsurgeon.jpg" />
+    <Content Include="photos\SamWalling.jpg" />
     <Content Include="photos\Surgery.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -241,6 +257,21 @@
     <Content Include="fonts\fontawesome-webfont.woff2" />
     <Content Include="fonts\FontAwesome.otf" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="EventsModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>EventsModel.Context1.cs</LastGenOutput>
+    </Content>
+    <EntityDeploy Include="EventsModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>EventsModel1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="EventsModel.edmx.diagram">
+      <DependentUpon>EventsModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="EventsModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>EventsModel1.cs</LastGenOutput>
+    </Content>
     <None Include="Properties\PublishProfiles\expo.cis420.net - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -294,7 +325,9 @@
     <Content Include="Views\VolunteerForm\NonPhysClinicalVolForm.cshtml" />
     <Content Include="Views\VolunteerForm\PhysVolForm.cshtml" />
     <Content Include="Views\VolunteerForm\VolunteerCommentForm.cshtml" />
-    <Content Include="Views\Home\Gethelp.cshtml" />
+    <Content Include="Views\GetHelp\GetHelp.cshtml" />
+    <Content Include="Views\Event\Event.cshtml" />
+    <Content Include="Views\PatientReferral\PatientReferral.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -313,6 +346,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

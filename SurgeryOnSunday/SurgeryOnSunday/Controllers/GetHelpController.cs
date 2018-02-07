@@ -9,7 +9,7 @@
      public class GetHelpController : Controller
      {
          // GET: GetHelp
-         public ActionResult Index()
+         public ActionResult GetHelp()
          {
  
              return View();

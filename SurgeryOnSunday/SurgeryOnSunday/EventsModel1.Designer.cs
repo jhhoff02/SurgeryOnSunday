@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'C:\Users\natha\source\repos\SurgeryOnSunday\SurgeryOnSunday\SurgeryOnSunday\EventsModel.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\Users\E028249\Source\Repos\SurgeryOnSunday\SurgeryOnSunday\SurgeryOnSunday\EventsModel.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.
