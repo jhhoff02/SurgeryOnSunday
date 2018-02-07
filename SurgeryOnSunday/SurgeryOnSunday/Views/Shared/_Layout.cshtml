@@ -40,11 +40,12 @@
             </div>
         </div>
     </div>
-    <div class="container body-content">
+    <div class="container-fluid body-content">
         @RenderBody()
         <hr />
         <footer>
-            <div class="row">
+            <div class="container">
+                <div class="row" style="align-content:center;">
                     <div class="col-md-4 bottom-left">&copy; @DateTime.Now.Year - Surgery on Sunday Application</div>
                     <div class="col-md-4 bottom-right text-center" style="font-weight:bold;">
                         Surgery on Sunday Louisville is a proud member partner of the National Colorectal Roundtable and is a member of the 80% by 2018 movement by the American Cancer Society
@@ -55,6 +56,7 @@
                         502-242-2089
                         info@soslouisville.org
                     </div>
+                </div>
             </div>
         </footer>
     </div>
