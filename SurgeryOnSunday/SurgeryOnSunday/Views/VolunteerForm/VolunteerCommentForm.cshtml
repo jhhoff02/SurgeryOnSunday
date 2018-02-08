@@ -3,41 +3,27 @@
     ViewBag.Title = "VolunteerCommentForm";
 }
 
+<div class="banner">
+    <img class="banner-image" src="~/photos/heart.jpg" alt="" style="width: 100%; height:350px">
+</div>
+<div class="container" style="padding-top:30px">
+    <div class="row" style="align-content:center;">
 
-<html>
+            <p style="color:rgb(0, 143, 179); text-align: center; font-size:25px;font-style: italic">
+                Recently volunteered with SOSL? We love hearing comments
+                and feedback from our wonderful volunteers!
+            </p>
 
-<body>
+            <br />
+            <div class="row" style="text-align:center;">
+                <form>
+                    <div class="form-group">
+                        <textarea class="form-control col-md-offset-5" id="exampleFormControlTextarea1" rows="8"></textarea>
+                    </div>
+                </form>
 
-    <div class="banner">
-
-        <img class="banner-image" src="~/photos/heart.jpg" alt="" style="width: 100%; height:350px">
-
-    </div>
-
-
-    <div class="grid-100 clearfix">
-        <h2 id="registration_form_title">Volunteer Comment Form</h2>
-    </div>
-
-    <br />
-
-    <p style="color:rgb(0, 143, 179); text-align: center; font-size:25px;font-style: italic">
-        Recently volunteered with SOSL? We love hearing comments
-        and feedback from our wonderful volunteers!
-    </p>
-
-    <br />
-
-    <form>
-        <div class="form-group">
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
+                <button type="button" class="btn btn-info">Submit</button>
+            </div>
         </div>
-    </form>
-
-    <button type="button" class="btn btn-info">Submit</button>
-
-
-</body>
-
-</html>
+    </div>
 

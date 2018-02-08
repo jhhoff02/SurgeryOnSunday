@@ -245,6 +245,7 @@
     <Content Include="photos\picgroup2.JPG" />
     <Content Include="photos\picsurgeon.jpg" />
     <Content Include="photos\SamWalling.jpg" />
+    <Content Include="photos\SOSlogo.jpg" />
     <Content Include="photos\Surgery.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
