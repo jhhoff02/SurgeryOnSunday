@@ -16,14 +16,9 @@
         <nav class="navbar">
             <div class="container">
 
-                <div class="navbar-header">
-                    <a href="index.html" class="navbar-brand">SOS</a>
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#ftheme">
-                        <span class="sr-only">Toggle</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
+                <div id="brandArea" style="height:100px; width:160px;">
+                    <img class="hideMe" src="~/photos/SOSlogo.jpg" id="brandLogo" />
+                    <a class="showMe brandText" href="/"></a>
                 </div>
 
                 <div class="navbar-collapse collapse" id="ftheme">
@@ -31,10 +26,9 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li class="active"><a href="/Home/Index">Home</a></li>
                         <li><a href="/Home/About">About Us</a></li>
-                        <li><a href="/Home/Gethelp">Get Help</a></li>
-                        <li><a href="/Home/Contact">Patient Referral</a></li>
-                        <li><a href="/Home/Contact">Events</a></li>
-                        <li><a href="/Home/Contact">DONATE</a></li>
+                        <li><a href="/GetHelp/Gethelp">Get Help</a></li>
+                        <li><a href="/PatientReferral/PatientReferral">Patient Referral</a></li>
+                        <li><a href="/Event/Event">Events</a></li>
                         <li class="dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="/Home/Contact">
                                 Get Involved
@@ -47,6 +41,19 @@
                                 <li><a href="/VolunteerForm/MedicalInterpreterForm">Medical Interpreter</a></li>
                                 <li><a href="/VolunteerForm/VolunteerCommentForm">Volunteer Comments</a></li>
                             </ul>
+                        </li>
+                        <li>
+                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                <input type="hidden" name="cmd" value="_donations">
+                                <input type="hidden" name="business" value="SOSLouisville@gmail.com">
+                                <input type="hidden" name="lc" value="US">
+                                <input type="hidden" name="item_name" value="Surgery On Sunday Louisville">
+                                <input type="hidden" name="no_note" value="0">
+                                <input type="hidden" name="currency_code" value="USD">
+                                <input type="hidden" name="bn" value="PP-DonationsBF:btn_donate_LG.gif:NonHostedGuest">
+                                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                            </form>
                         </li>
                     </ul>
 
@@ -125,21 +132,24 @@
             </div>
         </div>
     </div>*@
-    <div class="container body-content">
+
+    <div class="container-fluid body-content">
         @RenderBody()
         <hr />
         <footer>
-            <div class="row">
+            <div class="container">
+                <div class="row" style="align-content:center; color:dimgrey; font-size:small;">
                     <div class="col-md-4 bottom-left">&copy; @DateTime.Now.Year - Surgery on Sunday Application</div>
-                    <div class="col-md-4 bottom-right text-center" style="font-weight:bold;">
+                    <div class="col-md-4 bottom-right text-center">
                         Surgery on Sunday Louisville is a proud member partner of the National Colorectal Roundtable and is a member of the 80% by 2018 movement by the American Cancer Society
                     </div>
-                    <div class="col-md-4 bottom-right">
-                        PO Box 4757
-                        Louisville, KY 40204
-                        502-242-2089
-                        info@soslouisville.org
+                    <div class="col-md-3 bottom-right col-md-offset-1">
+                        PO Box 4757 <br />
+                        Louisville, KY 40204<br />
+                        502-242-2089<br />
+                        info@soslouisville.org<br />
                     </div>
+                </div>
             </div>
         </footer>
     </div>
