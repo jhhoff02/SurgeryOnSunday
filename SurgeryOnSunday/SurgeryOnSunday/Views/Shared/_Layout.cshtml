@@ -9,67 +9,176 @@
 
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("SOS Louisville", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+
+
+    <div id="main-nav" class="affix-top">
+
+        <nav class="navbar">
+            <div class="container">
+
+                <div id="brandArea" style="height:105px; width:155px;">
+                    <img class="hideMe" src="~/photos/SOSlogo.jpg" id="brandLogo" />
+                    <a class="showMe brandText" href="/"></a>
+                </div>
+
+                <div class="navbar-collapse collapse" id="ftheme">
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="/Home/Index">Home</a></li>
+                        <li><a href="/Home/About">About Us</a></li>
+                        <li><a href="/GetHelp/Gethelp">Get Help</a></li>
+                        <li><a href="/PatientReferral/PatientReferral">Patient Referral</a></li>
+                        <li><a href="/Event/Event">Events</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="/Home/Contact">
+                                Get Involved
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/VolunteerForm/PhysVolForm">Physician</a></li>
+                                <li><a href="/VolunteerForm/NonPhysClinicalVolForm">Non-Physician Clinical</a></li>
+                                <li><a href="/VolunteerForm/GeneralForm">General</a></li>
+                                <li><a href="/VolunteerForm/MedicalInterpreterForm">Medical Interpreter</a></li>
+                                <li><a href="/VolunteerForm/VolunteerCommentForm">Volunteer Comments</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                <input type="hidden" name="cmd" value="_donations">
+                                <input type="hidden" name="business" value="SOSLouisville@gmail.com">
+                                <input type="hidden" name="lc" value="US">
+                                <input type="hidden" name="item_name" value="Surgery On Sunday Louisville">
+                                <input type="hidden" name="no_note" value="0">
+                                <input type="hidden" name="currency_code" value="USD">
+                                <input type="hidden" name="bn" value="PP-DonationsBF:btn_donate_LG.gif:NonHostedGuest">
+                                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                            </form>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="search-form">
+                    <form lpformnum="1">
+                        <input type="text" id="s" size="40" placeholder="Search...">
+                    </form>
+                </div>
+
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About Us", "About", "Home")</li>
-                    <li>@Html.ActionLink("Get Help", "Contact", "Home")</li>
-                    <li>@Html.ActionLink("Get Involved", "Contact", "Home")</li>
-                    <li>@Html.ActionLink("Patient Referral", "Contact", "Home")</li>
-                    <li>
-                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                            <input type="hidden" name="cmd" value="_donations">
-                            <input type="hidden" name="business" value="SOSLouisville@gmail.com">
-                            <input type="hidden" name="lc" value="US">
-                            <input type="hidden" name="item_name" value="Surgery On Sunday Louisville">
-                            <input type="hidden" name="no_note" value="0">
-                            <input type="hidden" name="currency_code" value="USD">
-                            <input type="hidden" name="bn" value="PP-DonationsBF:btn_donate_LG.gif:NonHostedGuest">
-                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-                            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-                        </form>
-                    </li>
-                    <li>@Html.ActionLink("Events", "Contact", "Home")</li>
-                    <li>
-                        <select class="selectpicker" data-width="fit" style="margin-top:15px; padding-left:5px;">
-                            <option data-content='<span class="flag-icon flag-icon-us"></span> English'>English</option>
-                            <option data-content='<span class="flag-icon flag-icon-mx"></span> Español'>Español</option>
-                        </select>
-                    </li>
-                </ul>
-                @*@Html.Partial("_LanguagePartial")*@
-                @Html.Partial("_LoginPartial")
-            </div>
-        </div>
+        </nav>
     </div>
-    <div class="container body-content">
+
+
+
+
+
+    @* OLD NAV *@
+    @*<div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    @Html.ActionLink("SOS Louisville", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                        <li>@Html.ActionLink("About Us", "About", "Home")</li>
+                        <li>@Html.ActionLink("Get Help", "Gethelp", "Home")</li>
+                        <li>@Html.ActionLink("Get Involved", "Contact", "Home")</li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="/Home/Contact">
+                                Get Involved
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/VolunteerForm/PhysVolForm">Physician</a></li>
+                                <li><a href="/VolunteerForm/NonPhysClinicalVolForm">Non-Physician Clinical</a></li>
+                                <li><a href="/VolunteerForm/GeneralForm">General</a></li>
+                                <li><a href="/VolunteerForm/MedicalInterpreterForm">Medical Interpreter</a></li>
+                                <li><a href="/VolunteerForm/VolunteerCommentForm">Volunteer Comments</a></li>
+                            </ul>
+                        </li>
+
+                        <li>@Html.ActionLink("Patient Referral", "Contact", "Home")</li>
+                        <li>
+                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                <input type="hidden" name="cmd" value="_donations">
+                                <input type="hidden" name="business" value="SOSLouisville@gmail.com">
+                                <input type="hidden" name="lc" value="US">
+                                <input type="hidden" name="item_name" value="Surgery On Sunday Louisville">
+                                <input type="hidden" name="no_note" value="0">
+                                <input type="hidden" name="currency_code" value="USD">
+                                <input type="hidden" name="bn" value="PP-DonationsBF:btn_donate_LG.gif:NonHostedGuest">
+                                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                            </form>
+                        </li>
+                        <li>@Html.ActionLink("Events", "Contact", "Home")</li>
+                        <li>
+                            <select class="selectpicker" data-width="fit" style="margin-top:15px; padding-left:5px;">
+                                <option data-content='<span class="flag-icon flag-icon-us"></span> English'>English</option>
+                                <option data-content='<span class="flag-icon flag-icon-mx"></span> Español'>Español</option>
+                            </select>
+                        </li>
+
+                    </ul>
+                    @Html.Partial("_LanguagePartial")
+                    @Html.Partial("_LoginPartial")
+                </div>
+            </div>
+        </div>*@
+
+    <div class="container-fluid body-content">
         @RenderBody()
         <hr />
         <footer>
-            <div class="row">
-                    <div class="col-md-4 bottom-left">&copy; @DateTime.Now.Year - Surgery on Sunday Application</div>
-                    <div class="col-md-4 bottom-right text-center" style="font-weight:bold;">
-                        Surgery on Sunday Louisville is a proud member partner of the National Colorectal Roundtable and is a member of the 80% by 2018 movement by the American Cancer Society
+            <div class="container container-fluid">
+                <div class="row" style="color:dimgrey; font-size:small">
+                    <div class="col-md-4">
+                        &copy; @DateTime.Now.Year - Surgery on Sunday Application<br />
+                        <br />
+                        PO Box 4757 <br />
+                        Louisville, KY 40204<br />
+                        502-242-2089<br />
+                        info@soslouisville.org<br />
                     </div>
-                    <div class="col-md-4 bottom-right">
-                        PO Box 4757
-                        Louisville, KY 40204
-                        502-242-2089
-                        info@soslouisville.org
+                    <div class="col-md-4">
+                        Surgery on Sunday Louisville is a proud member partner of the National Colorectal
+                        Roundtable and is a member of the 80% by 2018 movement by the American Cancer Society
                     </div>
+                    <div class="col-md-4">
+                        <div class="common-BodyText" style="display: inline; font-size: 11px;">
+                            <a href="/Home/Index">Home |</a>
+                            <a href="/Home/About">About Us |</a>
+                            <a href="/Get Help/Gethelp">Get Help |</a>
+                            <a href="/PatientReferral/PatientReferral">Patient Referral |</a>
+                            <a href="/Event/Event">Events |</a>
+                            <a href="/Home/Contact">Get Involved |</a>
+                            <a href="https://www.paypal.com/cgi-bin/webscr">Donate</a>
+                        </div>
+                        <br />
+                        <br />
+                        <a class="navbar-brand" href="https://www.facebook.com/SurgeryOnSundayLouisville" style="opacity: 1;">
+                            <img alt="Brand" src="~/icons/Facebook-Icon.png">
+                        </a>
+                        <a class="center navbar-brand" href="https://www.instagram.com/surgeryonsundaylouisville" style="opacity: 1;">
+                            <img alt="Brand" src="~/icons/Instagram-Icon.png">
+                        </a>
+                        <a class="center navbar-brand" href="https://twitter.com/soslouisville" style="opacity: 1;">
+                            <img alt="Brand" src="~/icons/Twitter-Icon.png">
+                        </a>
+
+                    </div>
+                </div>
             </div>
         </footer>
     </div>
+
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")

@@ -1,0 +1,218 @@
+﻿
+@{
+    ViewBag.Title = "PhysVolForm";
+}
+
+<div class="banner">
+    <img class="banner-image" src="~/photos/heart.jpg" alt="" style="width: 100%; height:350px">
+</div>
+
+<div class="container" style="padding-top:30px">
+    <div class="row" style="align-content:center;">
+        <div class="grid-100 clearfix" style="text-align:center">
+            <h4 id="registration_form_title">Physician Volunteer Form</h4>
+        </div>
+
+        <br />
+
+        <p style="color:rgb(0, 143, 179); text-align: center; font-size:18px;font-style: italic">
+
+            Surgery on Sunday Louisville independently credentials each of its physician volunteers following
+            the method developed by The Joint Commission. That process requires us to query physician information
+            through the National Practitioner Database, a service provided by the United States Department of Health
+            and Human Services. Completion of this form serves as the agreement of the volunteer to allow Surgery on
+            Sunday Louisville to perform such query. Questions about this process can be directed to info@soslouisville.org.
+        </p>
+
+        <!-- Main form -->
+                <form>
+                    <div class="row">
+                        <div class="form-group col-md-4">
+                            <label>
+                                <abbr title="required">*</abbr> First Name
+                            </label>
+                            <input required="required" class="form-control" type="text" /><br />
+                            <label>
+                                <abbr title="required">*</abbr> Last Name
+                            </label>
+                            <input required="required" class="form-control" type="text" /><br />
+                            <label>
+                                <abbr title="required">*</abbr> Address
+                            </label>
+                            <input required="required" class="form-control" type="text" /><br />
+                            <label>
+                                <abbr title="required">*</abbr> City
+                            </label>
+                            <input required="required" class="form-control" type="text" /><br />
+                            <label>
+                                <abbr title="required">*</abbr> Postal Code
+                            </label>
+                            <input required="required" class="form-control" type="text" /> <br />
+                            <label>
+                                <abbr title="required">*</abbr> Year of Graduation
+                            </label>
+                            <input required="required" class="string required form-control" size="75" type="text" />
+
+                        </div>
+                        <br />
+                        <div class="form-group col-md-4">
+
+                            <div class="form-group">
+                                <label>State</label>
+                                <br />
+
+                                <input type="hidden" value="" />
+                                <select class="multi-select required form-control" multiple="multiple">
+                                    <option value="AL">Alabama</option>
+                                    <option value="AK">Alaska</option>
+                                    <option value="AZ">Arizona</option>
+                                    <option value="AR">Arkansas</option>
+                                    <option value="CA">California</option>
+                                    <option value="CO">Colorado</option>
+                                    <option value="CT">Connecticut</option>
+                                    <option value="DE">Delaware</option>
+                                    <option value="FL">Florida</option>
+                                    <option value="GA">Georgia</option>
+                                    <option value="HI">Hawaii</option>
+                                    <option value="ID">Idaho</option>
+                                    <option value="IL">Illinois</option>
+                                    <option value="IN">Indiana</option>
+                                    <option value="IA">Iowa</option>
+                                    <option value="KS">Kansas</option>
+                                    <option value="KY">Kentucky</option>
+                                    <option value="LA">Louisiana</option>
+                                    <option value="ME">Maine</option>
+                                    <option value="MD">Maryland</option>
+                                    <option value="MA">Massachusetts</option>
+                                    <option value="MI">Michigan</option>
+                                    <option value="MN">Minnesota</option>
+                                    <option value="MS">Mississippi</option>
+                                    <option value="MO">Missouri</option>
+                                    <option value="MT">Montona</option>
+                                    <option value="NE">Nebraska</option>
+                                    <option value="NV">Nevada</option>
+                                    <option value="NH">New Hampshire</option>
+                                    <option value="NJ">New Jersey</option>
+                                    <option value="NM">New Mexico</option>
+                                    <option value="NY">New York</option>
+                                    <option value="NC">North Carolina</option>
+                                    <option value="ND">North Dakota</option>
+                                    <option value="OH">Ohio</option>
+                                    <option value="OK">Oklahoma</option>
+                                    <option value="OR">Oregon</option>
+                                    <option value="PA">Pennsylvania</option>
+                                    <option value="RI">Rhode Island</option>
+                                    <option value="SC">South Carolina</option>
+                                    <option value="SD">South Dakota</option>
+                                    <option value="TN">Tennessee</option>
+                                    <option value="TX">Texas</option>
+                                    <option value="UT">Utah</option>
+                                    <option value="VT">Vermont</option>
+                                    <option value="VA">Virginia</option>
+                                    <option value="WA">Washington</option>
+                                    <option value="WV">West Virginia</option>
+                                    <option value="WI">Wisconsin</option>
+                                    <option value="WY">Wyoming</option>
+                                </select>
+                            </div><br />
+                            <label>
+                                <abbr title="required">*</abbr> Mobile Phone
+                            </label>
+                            <input required="required" class="string tel required form-control" type="tel" /> <br />
+                            <label>
+                                <abbr title="required">*</abbr> Email
+                            </label>
+                            <input required="required" class="string email required form-control" type="email" value="" /> <br />
+                            <label>
+                                <abbr title="required">*</abbr> Birthday
+                            </label>
+                            <input required="required" class="string required datepicker form-control" size="75" type="text" /> <br />
+                            <div class="row">
+                                <label class="col-md-6">Document</label>
+                                <input class="col-md-6 file optional required btn file-btn" accept="application/pdf,.pdf,.doc,.docx" type="file" />
+                            </div>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <div class="form-group">
+                                <label>* What/which state(s) are you licensed to practice in? </label>
+                                <br />
+
+                                <input type="hidden" value="" />
+                                    <select class="multi-select required form-control" multiple="multiple">
+                                        <option value="AL">Alabama</option>
+                                        <option value="AK">Alaska</option>
+                                        <option value="AZ">Arizona</option>
+                                        <option value="AR">Arkansas</option>
+                                        <option value="CA">California</option>
+                                        <option value="CO">Colorado</option>
+                                        <option value="CT">Connecticut</option>
+                                        <option value="DE">Delaware</option>
+                                        <option value="FL">Florida</option>
+                                        <option value="GA">Georgia</option>
+                                        <option value="HI">Hawaii</option>
+                                        <option value="ID">Idaho</option>
+                                        <option value="IL">Illinois</option>
+                                        <option value="IN">Indiana</option>
+                                        <option value="IA">Iowa</option>
+                                        <option value="KS">Kansas</option>
+                                        <option value="KY">Kentucky</option>
+                                        <option value="LA">Louisiana</option>
+                                        <option value="ME">Maine</option>
+                                        <option value="MD">Maryland</option>
+                                        <option value="MA">Massachusetts</option>
+                                        <option value="MI">Michigan</option>
+                                        <option value="MN">Minnesota</option>
+                                        <option value="MS">Mississippi</option>
+                                        <option value="MO">Missouri</option>
+                                        <option value="MT">Montona</option>
+                                        <option value="NE">Nebraska</option>
+                                        <option value="NV">Nevada</option>
+                                        <option value="NH">New Hampshire</option>
+                                        <option value="NJ">New Jersey</option>
+                                        <option value="NM">New Mexico</option>
+                                        <option value="NY">New York</option>
+                                        <option value="NC">North Carolina</option>
+                                        <option value="ND">North Dakota</option>
+                                        <option value="OH">Ohio</option>
+                                        <option value="OK">Oklahoma</option>
+                                        <option value="OR">Oregon</option>
+                                        <option value="PA">Pennsylvania</option>
+                                        <option value="RI">Rhode Island</option>
+                                        <option value="SC">South Carolina</option>
+                                        <option value="SD">South Dakota</option>
+                                        <option value="TN">Tennessee</option>
+                                        <option value="TX">Texas</option>
+                                        <option value="UT">Utah</option>
+                                        <option value="VT">Vermont</option>
+                                        <option value="VA">Virginia</option>
+                                        <option value="WA">Washington</option>
+                                        <option value="WV">West Virginia</option>
+                                        <option value="WI">Wisconsin</option>
+                                        <option value="WY">Wyoming</option>
+                                </select>
+                            </div> <br />
+                            <label>
+                                <abbr title="required">*</abbr> Medical Specialty
+                            </label>
+                            <input required="required" class="string required form-control" size="75" type="text" /><br />
+                            <label>
+                                <abbr title="required">*</abbr> Professional License Number
+                             </label>
+                            <input required="required" class="form-control" size="75" type="text" /><br />
+                            <label>
+                                <abbr title="required">*</abbr> Professional Alma Mater
+                            </label>
+                            <input required="required" class="string required form-control" size="75" type="text" /> <br />
+
+                            <div style="text-align:center">Please upload an up-to-date CV. <br /> We need this for our malpractice insurance. </div>
+
+                        </div>
+                    </div>
+                        <br />
+                    <div class="row" style="align-content:center; text-align:center;" >
+                        <button type="button" class="btn btn-info">Submit</button>
+                    </div>
+
+</form>
+    </div>
+</div>
