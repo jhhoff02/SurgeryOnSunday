@@ -29,5 +29,7 @@ namespace SurgeryOnSunday.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<SurgeryOnSunday.Models.Volunteer> Volunteers { get; set; }
     }
 }

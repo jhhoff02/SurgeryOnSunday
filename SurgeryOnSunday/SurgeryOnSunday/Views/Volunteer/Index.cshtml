@@ -1,0 +1,165 @@
+﻿@model IEnumerable<SurgeryOnSunday.Models.Volunteer>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LastName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PreferredName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Address)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.City)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.State)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PostalCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Phone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BirthDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MedSpecialty)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AlmaMater)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GradDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LicenseNum)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LicenseState)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Upload)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ShirtSize)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProfTitle)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Employer)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PersonalDescr)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VolAreas)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Languages)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Comments)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.FirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LastName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PreferredName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Address)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.City)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.State)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PostalCode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Phone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BirthDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MedSpecialty)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AlmaMater)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GradDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LicenseNum)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LicenseState)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Upload)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ShirtSize)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProfTitle)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Employer)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PersonalDescr)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.VolAreas)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Languages)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Comments)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.VolunteerID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.VolunteerID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.VolunteerID })
+        </td>
+    </tr>
+}
+
+</table>

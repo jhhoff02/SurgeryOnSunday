@@ -192,6 +192,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\VolunteerController.cs" />
     <Compile Include="Controllers\VolunteerFormController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -199,6 +200,7 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Volunteer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -297,6 +299,11 @@
     <Content Include="Views\VolunteerForm\NonPhysClinicalVolForm.cshtml" />
     <Content Include="Views\VolunteerForm\PhysVolForm.cshtml" />
     <Content Include="Views\VolunteerForm\VolunteerCommentForm.cshtml" />
+    <Content Include="Views\Volunteer\Create.cshtml" />
+    <Content Include="Views\Volunteer\Delete.cshtml" />
+    <Content Include="Views\Volunteer\Details.cshtml" />
+    <Content Include="Views\Volunteer\Edit.cshtml" />
+    <Content Include="Views\Volunteer\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
