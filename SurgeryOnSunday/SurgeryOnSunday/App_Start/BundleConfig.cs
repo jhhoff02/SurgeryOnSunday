@@ -25,6 +25,13 @@ namespace SurgeryOnSunday
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
+                      "~/Content/bootstrap.min.css",
+                      "~/Content/bootstrap-theme.css",
+                      "~/Content/bootstrap-theme.min.css",
+                      "~/Content/font-awesome.css",
+                      "~/Content/font-awesome.min.css",
+                      "~/Content/flexslider.css",
+                      "~/Content/style.css",                      
                       "~/Content/site.css"));
         }
     }
