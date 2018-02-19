@@ -5,7 +5,7 @@ using System.Web;
 
 namespace SurgeryOnSunday.Models
 {
-    public class NonPhysClinicalVolForm
+    public class NonPhysClinicalVol
     {
         public int NonPhysClinicalVolID { get; set; }
 

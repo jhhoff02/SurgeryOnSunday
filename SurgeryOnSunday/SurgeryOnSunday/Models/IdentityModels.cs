@@ -30,5 +30,6 @@ namespace SurgeryOnSunday.Models
             return new ApplicationDbContext();
         }
 
+        public DbSet<NonPhysClinicalVol> NonPhysClinicalVol { get; set; }
     }
 }

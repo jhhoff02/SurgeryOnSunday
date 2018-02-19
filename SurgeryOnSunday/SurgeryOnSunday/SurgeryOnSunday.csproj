@@ -194,6 +194,7 @@
     <Compile Include="Controllers\GetHelpController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\NonPhysClinicalVolController.cs" />
     <Compile Include="Controllers\PatientReferralController.cs" />
     <Compile Include="Controllers\VolunteerFormController.cs" />
     <Compile Include="Event.cs">
@@ -211,7 +212,7 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
-    <Compile Include="Models\NonPhysClinicalVolForm.cs" />
+    <Compile Include="Models\NonPhysClinicalVol.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -335,6 +336,11 @@
     <Content Include="Views\GetHelp\GetHelp.cshtml" />
     <Content Include="Views\Event\Event.cshtml" />
     <Content Include="Views\PatientReferral\PatientReferral.cshtml" />
+    <Content Include="Views\NonPhysClinicalVol\Create.cshtml" />
+    <Content Include="Views\NonPhysClinicalVol\Delete.cshtml" />
+    <Content Include="Views\NonPhysClinicalVol\Details.cshtml" />
+    <Content Include="Views\NonPhysClinicalVol\Edit.cshtml" />
+    <Content Include="Views\NonPhysClinicalVol\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
