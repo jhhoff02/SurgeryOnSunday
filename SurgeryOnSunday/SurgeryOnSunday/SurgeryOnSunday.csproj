@@ -192,6 +192,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\PatientReferralController.cs" />
+    <Compile Include="Controllers\VolunteerController.cs" />
     <Compile Include="Controllers\VolunteerFormController.cs" />
     <Compile Include="Event.cs">
       <DependentUpon>EventsModel.tt</DependentUpon>
@@ -208,6 +209,7 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Volunteer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -234,6 +236,7 @@
     <Content Include="photos\EricaSutton.jpg" />
     <Content Include="photos\ig.jpg" />
     <Content Include="photos\JordanLicata.jpg" />
+    <Content Include="photos\PatTest.jpg" />
     <Content Include="photos\photo1.jpg" />
     <Content Include="photos\heart.jpg" />
     <Content Include="photos\heartSteth.jpeg" />
@@ -246,6 +249,7 @@
     <Content Include="photos\picsurgeon.jpg" />
     <Content Include="photos\SamWalling.jpg" />
     <Content Include="photos\SOSlogo.jpg" />
+    <Content Include="photos\SosPatient.jpg" />
     <Content Include="photos\Surgery.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -329,9 +333,15 @@
     <Content Include="Views\GetHelp\GetHelp.cshtml" />
     <Content Include="Views\Event\Event.cshtml" />
     <Content Include="Views\PatientReferral\PatientReferral.cshtml" />
+    <Content Include="Views\Volunteer\Create.cshtml" />
+    <Content Include="Views\Volunteer\Delete.cshtml" />
+    <Content Include="Views\Volunteer\Details.cshtml" />
+    <Content Include="Views\Volunteer\Edit.cshtml" />
+    <Content Include="Views\Volunteer\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Models\ViewModels\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

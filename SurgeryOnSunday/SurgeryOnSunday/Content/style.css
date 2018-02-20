@@ -106,12 +106,12 @@ textarea:focus {
 .container {
 	position: relative;
 	z-index: 3;
+
 }
 
 /*Header*/
 /*Top nav left*/
 .top-nav {
-	;
 	color: #333;
 	line-height: 40px;
 	border-bottom: 1px solid #01b1d7;
@@ -185,12 +185,12 @@ textarea:focus {
 }
 
 #main-nav .navbar-header a {
-	background-color: #01b1d7;
-	color: #fff;
+    background-color: #4286f4;
+    color: #fff;
 }
 /*Toggle Menu*/
 #main-nav .navbar-toggle {
-	background-color: #01b1d7;
+	background-color: #4286f4;
 }
 
 #main-nav .navbar-toggle span {
